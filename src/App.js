@@ -1,3 +1,4 @@
+import './App.css';
 import {
   BrowserRouter as Router, Route, Switch, Redirect, Link,
 } from 'react-router-dom';
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <h1>BookStore CMS</h1>
       <Router>
-        <Link to="/books">Books</Link>
+        <Link to="/books" className="mr-10">Books</Link>
         <Link to="/categories">Categories</Link>
         <Switch>
           <Route path="/books">
@@ -25,4 +26,4 @@ function App() {
   );
 }
 
-export default (App);
+export default App;
