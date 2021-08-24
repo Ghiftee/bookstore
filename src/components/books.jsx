@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as UUID } from 'uuid';
-import { allBooks, addBook, removeBook } from '../redux/books/books';
+import { allBooks, addBookToStore, removeBookFromStore } from '../redux/books/books';
 
 export default function Books() {
   const dispatch = useDispatch();
@@ -22,12 +22,13 @@ export default function Books() {
       id: UUID(),
       title,
       author,
+      category: '',
     };
-    dispatch(addBook(newBook));
+    dispatch(addBookToStore(newBook));
   };
 
   const deleteBookFromStore = (e) => {
-    dispatch(removeBook({ id: e.target.id }));
+    dispatch(removeBookFromStore({ id: e.target.id }));
   };
 
   return (
