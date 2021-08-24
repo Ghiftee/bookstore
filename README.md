@@ -8,7 +8,7 @@
 - Created a new React App using CRA.
 - Install react-redux.
 - Structure application to use ducks pattern.
-- Add Reacr-router and set routes and links for app's navigation.
+- Add React-router and set routes and links for app's navigation.
 - To get started with CRA, see more information below:
 
 #### Getting Started with Create React App
@@ -48,8 +48,14 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## Milestone 2: Create and remove books
+- Configure redux store.
+- Write actions and reducer for adding and removing books.
+- Make elements dispatch actions.
+- Use redux-logger to make sure application works correctly.
+
 ## Built With
-- React, React Router, Redux, Webpack, Javascript, React testing library, Babel and Jest
+- React, React Router, Redux, Redux Logger, Webpack, Javascript, React testing library, Babel and Jest
 
 ## Author
 👤 **Gift Uwhubetine**
