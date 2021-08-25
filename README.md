@@ -54,6 +54,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - Make elements dispatch actions.
 - Use redux-logger to make sure application works correctly.
 
+## Milestone 3: Connect to Api
+- Refactor code to use the Bookstore API to add and remove books
+
 ## Built With
 - React, React Router, Redux, Redux Logger, Webpack, Javascript, React testing library, Babel and Jest
 

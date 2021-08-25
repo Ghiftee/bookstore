@@ -1,13 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as UUID } from 'uuid';
-import { allBooks, addBook, removeBook } from '../redux/books/books';
+import { initialize } from '../api/bookstore';
+import {
+  allBooks, addBookToStore, removeBookFromStore, fetchBooks,
+} from '../redux/books/books';
 
 export default function Books() {
   const dispatch = useDispatch();
   const books = useSelector(allBooks);
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+
+  useEffect(async () => {
+    await initialize();
+    dispatch(fetchBooks);
+  }, [initialize]);
 
   const setBookTitle = (e) => {
     setTitle(e.target.value);
@@ -22,12 +30,13 @@ export default function Books() {
       id: UUID(),
       title,
       author,
+      category: '',
     };
-    dispatch(addBook(newBook));
+    dispatch(addBookToStore(newBook));
   };
 
   const deleteBookFromStore = (e) => {
-    dispatch(removeBook({ id: e.target.id }));
+    dispatch(removeBookFromStore({ id: e.target.id }));
   };
 
   return (
