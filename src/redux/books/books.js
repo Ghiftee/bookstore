@@ -1,5 +1,5 @@
 import {
-  initialize, getBooks, addNewBook, removeExistingBook,
+  getBooks, addNewBook, removeExistingBook,
 } from '../../api/bookstore';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
@@ -29,7 +29,6 @@ const reducer = (state = initialState, action) => {
 };
 
 export const fetchBooks = async (dispatch) => {
-  await initialize();
   let books = await getBooks();
   if (books.trim().length > 0) {
     books = JSON.parse(books);
