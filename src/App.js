@@ -8,20 +8,24 @@ import Categories from './components/categories';
 function App() {
   return (
     <div className="App">
-      <h1>BookStore CMS</h1>
-      <Router>
-        <Link to="/books" className="mr-10">Books</Link>
-        <Link to="/categories">Categories</Link>
-        <Switch>
-          <Route path="/books">
-            <Books />
-          </Route>
-          <Route path="/categories">
-            <Categories />
-          </Route>
-          <Redirect from="/" to="/books" />
-        </Switch>
-      </Router>
+      <div>
+        <Router>
+          <header className="d-flex panel-bg">
+            <h1 className="bookstore-cms">BookStore CMS</h1>
+            <Link to="/books" className="books text-decoration-none">Books</Link>
+            <Link to="/categories" className="categories text-decoration-none">Categories</Link>
+          </header>
+          <Switch>
+            <Route path="/books">
+              <Books />
+            </Route>
+            <Route path="/categories">
+              <Categories />
+            </Route>
+            <Redirect from="/" to="/books" />
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }

@@ -41,7 +41,6 @@ export default function Books() {
 
   return (
     <div>
-      <h3>All Books</h3>
       <div>
         <ul>
           { books.map((book) => (
@@ -52,16 +51,18 @@ export default function Books() {
           ))}
         </ul>
       </div>
-      <form>
-        <h4>Add New Book</h4>
-        <input placeholder="Title" onChange={setBookTitle} />
-        <br />
-        <br />
-        <input placeholder="Author" onChange={setBookAuthor} />
-        <br />
-        <br />
-        <button type="button" onClick={submitToBookStore}>Add Book</button>
-      </form>
+      <div>
+        <h4 className="new-book">ADD NEW BOOK</h4>
+        <form className="d-flex">
+          <input className="book-title" placeholder="Book Title" onChange={setBookTitle} />
+          <br />
+          <br />
+          <input className="category-title" placeholder="Category" onChange={setBookAuthor} />
+          <br />
+          <br />
+          <button className="add-book-button" type="submit" onClick={submitToBookStore}><span>ADD BOOK</span></button>
+        </form>
+      </div>
     </div>
   );
 }
