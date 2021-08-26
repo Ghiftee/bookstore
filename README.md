@@ -7,7 +7,8 @@
 ![screenshot](src/images/Screenshot.png)
 
 ## Live demo
-- [Netlify](https://dazzling-leakey-e61725.netlify.app/books)
+- [Heroku](https://react-redux-bookstore-app.herokuapp.com/books)
+- [Netlify](https://sleepy-bose-b9b89e.netlify.app/books)
 
 ## Milestone 1: Initalize project with components
 - Created a new React App using CRA.
