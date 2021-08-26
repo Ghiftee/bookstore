@@ -4,6 +4,8 @@
 
 > This project is a Bookstore app built using React and Redux
 
+![screenshot](src/images/Screenshot.png)
+
 ## Milestone 1: Initalize project with components
 - Created a new React App using CRA.
 - Install react-redux.
@@ -55,10 +57,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - Use redux-logger to make sure application works correctly.
 
 ## Milestone 3: Connect to Api
-- Refactor code to use the Bookstore API to add and remove books
+- Refactor code to use the Bookstore API to add and remove books.
+
+## Milestone 4: 
+- Style app using details of Bookstore design in [Zeplin](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378).
 
 ## Built With
-- React, React Router, Redux, Redux Logger, Webpack, Javascript, React testing library, Babel and Jest
+- React, React Router, Redux, Redux Logger, Webpack, Zeplin, Javascript, React testing library, Babel and Jest
 
 ## Author
 👤 **Gift Uwhubetine**
