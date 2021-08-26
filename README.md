@@ -8,7 +8,6 @@
 
 ## Live demo
 - [Netlify](https://dazzling-leakey-e61725.netlify.app/books)
-- [Heroku]()
 
 ## Milestone 1: Initalize project with components
 - Created a new React App using CRA.
