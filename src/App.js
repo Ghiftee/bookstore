@@ -8,10 +8,12 @@ import Categories from './components/categories';
 function App() {
   return (
     <div className="App">
-      <h1>BookStore CMS</h1>
       <Router>
-        <Link to="/books" className="mr-10">Books</Link>
-        <Link to="/categories">Categories</Link>
+        <header className="header bg-white p-3 d-flex align-items-center mb-4">
+          <h1 className="header-text d-inline-block">BookStore CMS</h1>
+          <Link to="/books" className=" link">BOOKS</Link>
+          <Link to="/categories" className="link">CATEGORIES</Link>
+        </header>
         <Switch>
           <Route path="/books">
             <Books />

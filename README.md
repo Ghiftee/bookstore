@@ -4,6 +4,11 @@
 
 > This project is a Bookstore app built using React and Redux
 
+![screenshot](src/images/Screenshot.png)
+
+## Live demo
+- [Netlify](https://dazzling-leakey-e61725.netlify.app/books)
+
 ## Milestone 1: Initalize project with components
 - Created a new React App using CRA.
 - Install react-redux.
@@ -55,10 +60,45 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - Use redux-logger to make sure application works correctly.
 
 ## Milestone 3: Connect to Api
-- Refactor code to use the Bookstore API to add and remove books
+- Refactor code to use the Bookstore API to add and remove books.
+
+## Milestone 4: 
+- Style app using details of Bookstore design in [Zeplin](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378).
 
 ## Built With
-- React, React Router, Redux, Redux Logger, Webpack, Javascript, React testing library, Babel and Jest
+- React, React Router, Redux, Redux Logger, Webpack, Zeplin, Javascript, React testing library, Babel and Jest
+
+## Getting Started
+To get a local copy up and running follow these simple example steps.
+- git clone https://github.com/Ghiftee/bookstore
+
+### Setup
+git clone https://github.com/Ghiftee/bookstore
+cd ./bookstore
+
+### Install
+npm install
+
+### Usage
+npm start
+
+### Run tests
+npm run test
+npm run jest
+
+
+If you are non a technical person you can download the zip file.
+
+- To do that you have to go to the green button that says 'Code' and then press on it.
+- Choose the option 'Download Zip' and wait until it download.
+- Then you need to decompress it.
+- You will need to have Zip compress file software installed in your computer. If you don't have it you can download it from here
+  [`https://www.7-zip.org/download.html`](https://www.7-zip.org/download.html)
+- Do double click on the bookstore.zip and choose a folder where to place all the decompressed files.
+- Once you are done decompressing, you can open the created folder.
+- In it you can double click on the index.html file and choose a browser to open it (For example google Chrome Browser).
+- Now you should be able to see the project.
+- Remember to use the mouse to navigate through the website. Also you can use the keys 'arrow up' and 'arrow down' of your keyboard to scroll up and down.
 
 ## Author
 👤 **Gift Uwhubetine**
@@ -80,3 +120,6 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## Acknowledgment
+- Microverse.inc
